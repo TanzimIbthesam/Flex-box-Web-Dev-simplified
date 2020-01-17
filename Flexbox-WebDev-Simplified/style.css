@@ -1,0 +1,64 @@
+.flexbox-container{
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* wrap property helps us to wrap in different lines make it responsive to different screen sizes instead of shrinking their sizes */
+    /* background: red; */
+    /* if we want to style our content on main 
+axis which is x axis then we can write justify-content */
+    /* justify-content:space-between; */
+    /* if we want space on all side that is same amount of space on all side */
+    /* justify-content:space-around; */
+    /* if we want to design items on cross axis that is y axis */
+    /* align-items: center; */
+    /* align-items:center;
+    align-content:space-between; */
+    /* if we want all to rows a column */
+    /* flex-direction:column; */
+    /* justify-content:center; */
+    /* it takes us to all columns to center they are centering horizantally they are horizantal inside a column based flexbox container  */
+    /* align-items:center; */
+    /* align-content:space-between; */
+    /* they dont center horizantally cause they are centering inside of the column */
+    /* if we give height than it will center vertically cause justify content is using the main axis which is main axis */
+    
+
+}
+.flexbox-item{
+    width:200px;
+    margin:18px;
+    border:3px solid #333;
+    background-color:#dfdfdf;
+}
+.flexbox-item-1{
+    min-height:200px;
+    /* flex-shrink:0; */
+    /* when we resize the browser the item does not shrink */
+    /* align-self:flex-end; */
+    /* //It aligns self to end of the container */
+    /* order:3; */
+    /* to use flex grow shrink and order in one line */
+    /* flex:1 0 0px; */
+}
+.flexbox-item-2{
+    min-height:200px;
+    /* flex-grow:2; */
+    /* its not twice as flexbox 3 cause it takes 200px width and overrides the remaining space */
+    /* flex-basis:0; */
+    /* now due to flex-basis item looks twice as bis as item 3 */
+    /* //overrides align property over other containers */
+    /* align-self:center;
+    order:2; */
+    /* //order not reommended */
+}
+.flexbox-item-3{
+    min-height:200px;
+    /* flex-grow:1 ;
+    flex-basis: 0; */
+    /* flex-grow:1; */
+    
+    /* order:1; */
+}
